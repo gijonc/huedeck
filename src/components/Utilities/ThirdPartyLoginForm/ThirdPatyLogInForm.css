@@ -1,0 +1,28 @@
+@import '../../variables.css';
+
+.container > form {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.facebook {
+  composes: button;
+  background: #3b5998;
+  color: #fff;
+  border: none;
+}
+
+.google {
+  composes: button;
+  background: #c23321;
+  color: #fff;
+  border: none;
+}
+
+.facebook i,
+.google i {
+  position: absolute;
+  left: 15px;
+  font-size: 18px;
+}

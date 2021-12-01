@@ -1,0 +1,102 @@
+/*
+	Huedeck, Inc.
+*/
+
+@import '../../../components/variables.css';
+
+.container {
+  padding: 3% 0;
+}
+
+.container .tabs {
+  width: 50%;
+  border: 2px solid var(--black);
+  border-radius: 28px;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container .tabs > button {
+  border-right: 2px solid var(--black);
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 1.2% 0;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  transition: all 0.15s ease;
+  font-weight: 500;
+}
+
+.container .tabs > button:last-child {
+  border-right: 0;
+}
+
+.activeTab,
+.container .tabs > button:hover {
+  background-color: var(--black);
+  color: #fff;
+}
+
+.tabContent {
+  display: flex;
+  color: #686868;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.tabContent .tabContentWrapper {
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 32px rgba(7, 6, 6, 0.1);
+  border-radius: 8px;
+  min-height: 10vw;
+  width: 48%;
+  margin: 0 auto;
+  text-transform: capitalize;
+  padding: 0 1%;
+}
+
+.tabContent .tabContentWrapper span {
+  padding: 1.5% 1%;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.tabContent .tabContentWrapper .name {
+  background-color: #f6fafb;
+  color: #000;
+  width: 32%;
+  display: inline-block;
+  margin-left: 1%;
+}
+
+.tabContent .tabContentWrapper .desc {
+  display: inline-block;
+  width: 67%;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    border-top: 1px solid var(--light-blue);
+  }
+
+  .container .tabs,
+  .container .tabContent,
+  .container .tabContent .tabContentWrapper {
+    display: block;
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container .tabContent {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 3% 0;
+  }
+}

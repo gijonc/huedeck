@@ -1,0 +1,12 @@
+/**
+ *	Huedeck, Inc
+ */
+@import '../../../components/variables.css';
+
+.container {
+  position: relative;
+}
+
+.masonryContainer {
+  width: 100%;
+}

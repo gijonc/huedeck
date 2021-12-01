@@ -1,0 +1,88 @@
+/**
+ * Huedeck, Inc.
+ */
+
+@import '../../../components/variables.css';
+
+.container {
+  font-size: 16px;
+}
+
+.container h1 {
+  text-align: center;
+  white-space: pre-wrap;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 5%;
+}
+
+.optionsContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.imageOption {
+  width: 40%;
+  padding: 0;
+  border-radius: 2px;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.imageOption span {
+  display: block;
+  text-transform: capitalize;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 5px;
+  border: 3px solid #fff;
+}
+
+.activeOption {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  padding: 10px;
+  background: var(--yellow);
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.activeOption i {
+  font-size: 18px;
+}
+
+.imgWrapper img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .imageOption {
+    width: 50% !important;
+  }
+
+  .imageOption span {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,74 @@
+/**
+ * Huedeck
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  padding: var(--padding-height) var(--header-padding);
+  min-height: 50vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+.tab {
+  composes: button;
+  width: 100%;
+  background: #fff;
+  padding: 0.6rem 0;
+  font-size: 1.3rem;
+  border: 2px solid lightgrey;
+  margin-bottom: 5%;
+}
+
+.tab:last-child {
+  margin: 0;
+}
+
+.tabFocused {
+  border-color: var(--yellow);
+  background: var(--yellow);
+}
+
+.sectionWrapper {
+  -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+  border-radius: 0.5rem;
+  padding: 3%;
+  box-sizing: border-box;
+}
+
+.sectionWrapper > strong {
+  text-transform: capitalize;
+  display: block;
+  font-size: 1.8rem;
+  color: var(--light-black);
+  padding: 15px 0;
+  border-bottom: 1px solid var(--light-blue);
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    padding: var(--padding-height) 0;
+  }
+
+  .tab {
+    width: 80%;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .sectionWrapper {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-top: 1px solid lightgray;
+    margin-top: 5%;
+  }
+}

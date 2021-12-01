@@ -1,0 +1,157 @@
+@import '../HowItWorks.css';
+
+.section {
+  background-image: url('https://storage.googleapis.com/huedeck/img/home/s1_bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right 14%;
+  height: calc(100vh - 100px);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.textWrapper {
+  position: absolute;
+  left: 0;
+  z-index: var(--over-top);
+  top: 12%;
+}
+
+.textWrapper > button {
+  width: 200px;
+}
+
+.subDesc {
+  margin: 4% 0;
+}
+
+.subDesc > span {
+  padding: 3px 0.8rem;
+  display: inline-block;
+  background-color: var(--light-blue);
+  font-size: 2rem;
+}
+
+.slider {
+  width: 42%;
+  border-radius: 50%;
+  border: 3px solid var(--yellow);
+  background: transparent;
+  overflow: hidden;
+
+  /* below is for fixing a bug that overflow doesn't work on ios safari */
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+.slider ul {
+  bottom: 1%;
+}
+
+.slider ul li button::before {
+  font-size: 0.7rem;
+}
+
+.imgWrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+}
+
+.imgWrapper a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.imgWrapper img {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.shareBtnList {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.shareBtnList .shareBtn {
+  border: 2px solid var(--black);
+  color: var(--black);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: var(--padding-height);
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .textWrapper {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: unset;
+    bottom: 0;
+  }
+
+  .slider {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+
+  .slider ul {
+    bottom: -25px;
+  }
+
+  .slider ul li button {
+    pointer-events: none;
+  }
+
+  .slider ul li button::before {
+    display: none;
+    content: '';
+  }
+
+  .subDesc > span {
+    font-size: 1.6rem;
+  }
+
+  .shareBtnList {
+    right: 2%;
+    top: 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    background-image: url('https://storage.googleapis.com/huedeck/img/home/m/s1_bg.jpg');
+  }
+}

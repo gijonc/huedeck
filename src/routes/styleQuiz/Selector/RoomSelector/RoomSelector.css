@@ -1,0 +1,14 @@
+/**
+ * Huedeck, Inc.
+ */
+
+@import '../Selector.css';
+
+.imageOption {
+  width: 30%;
+}
+
+.imgWrapper img {
+  height: 100%;
+  width: auto;
+}

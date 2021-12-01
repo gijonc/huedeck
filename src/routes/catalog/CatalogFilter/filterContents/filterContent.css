@@ -1,0 +1,105 @@
+/**
+ * Huedeck, Inc
+ */
+
+@import '../../../../components/variables.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 14px 36px 2px !important;
+  font-size: 14px;
+}
+
+.checkboxContent {
+  width: 100%;
+  min-width: 180px;
+  min-height: 250px;
+  max-height: 55vh;
+  overflow-y: auto;
+}
+
+.checkboxContent .checkBox {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.checkBox > div {
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  background: #fff;
+}
+
+.checkBox > span {
+  padding: 0 8px;
+}
+
+.checkBox svg {
+  color: var(--yellow);
+}
+
+.checkBox:hover {
+  background: var(--background-color);
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.textContent {
+  padding: 15px;
+}
+
+.textContent > span {
+  padding: 0 5px;
+}
+
+.textContent .inputBox {
+  -webkit-appearance: none;
+  width: 80px;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+/* appply and reset button */
+
+.filterAction {
+  text-align: right;
+  border-top: 1px solid var(--background-color);
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+.filterAction button,
+.filterAction a {
+  padding: 5px 8px;
+  color: grey;
+  text-transform: capitalize;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.filterAction .applyBtn {
+  color: var(--sky-blue);
+}
+
+.filterAction p {
+  color: var(--red);
+  font-size: 14px;
+}

@@ -1,0 +1,140 @@
+/**
+ * Huedeck, Inc
+ */
+@import '../../../components/variables.css';
+
+.container {
+  width: 100%;
+  border-bottom: 1px solid var(--background-color);
+  font-size: 1.5rem;
+}
+
+.filterPopper {
+  margin-top: 40px;
+  z-index: var(--over-top);
+}
+
+.chipContainer,
+.filterBtnContainer {
+  white-space: nowrap;
+  overflow: auto;
+  padding: 10px 0;
+}
+
+.filterBtnContainer > div {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.filterBtn {
+  composes: button;
+  cursor: pointer;
+  border: 0.12rem solid grey;
+  width: auto;
+  min-width: 90px;
+  padding: 8px 30px 8px 15px;
+  font-size: 14px;
+  background: url('../../../assets/img/select-arrow-24px.svg') 90% / 16px no-repeat #fff;
+}
+
+.active {
+  border-color: #111;
+}
+
+.filterChip {
+  background: var(--yellow);
+  color: var(--black);
+  display: inline-flex;
+  flex-shrink: 0;
+  margin: 0.5%;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 28px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.colorChip {
+  color: var(--black);
+  display: inline-flex;
+  flex-shrink: 0;
+  margin: 0 5px;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 28px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 1px solid var(--yellow);
+}
+
+.colorChip div {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 1px solid lightgray;
+}
+
+.filterChip span {
+  font-size: 15px;
+  padding-left: 7px;
+}
+
+.chipContainer .clrAllBtn { /* for clear all button */
+  padding: 5px 10px;
+  text-transform: capitalize;
+  flex-shrink: 0;
+  color: var(--yellow);
+}
+
+.colorChip:hover,
+.filterChip:hover {
+  -webkit-box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 32px 4px rgba(0, 0, 0, 0.1);
+}
+
+.paletteCheckboxWrapper > button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+}
+
+.colorFilterButton {
+  width: 160px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.colorFilterButton > button {
+  border-radius: 4px;
+  padding: 3%;
+  margin: 1.5% 1%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* for mobile devices */
+@media screen and (max-width: 768px) {
+  .filterBtn {
+    border-radius: 4px;
+    border: 1px solid var(--black);
+  }
+
+  .filterBtnContainer {
+    background-color: var(--background-color);
+  }
+
+  .filterBtnContainer > span {
+    display: none;
+  }
+}

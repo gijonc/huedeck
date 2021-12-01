@@ -1,0 +1,64 @@
+/*
+	Huedeck, Inc.
+*/
+
+@import '../../../components/variables.css';
+
+.container {
+  background: #fff;
+  padding: 1% 0;
+}
+
+.noItemFound::after {
+  content: 'No matching item found.';
+  color: var(--light-black);
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  padding: 2% 0;
+}
+
+.itemList > div > div {
+  flex: 0 0 20%;
+  font-size: 15px;
+}
+
+.pdCtrl {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.pdCtrl > p {
+  font-size: 14px;
+  font-size: 500;
+  color: var(--light-black);
+  font-style: italic;
+}
+
+.pdCtrlBtn {
+  composes: button;
+  width: 220px;
+  margin: 0 2%;
+  margin-top: 2%;
+}
+
+.pagingCtrl {
+  display: table;
+  margin: 30px auto;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+.pagingCtrl .pageBtn {
+  padding: 10px 0;
+  width: 45px;
+  text-align: center;
+  font-size: 15px;
+  color: var(--black);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.pageBtn:hover {
+  background: var(--background-color);
+}

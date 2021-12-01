@@ -1,0 +1,93 @@
+/**
+ * Huedeck, Inc
+ */
+
+@import '../../../components/variables.css';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.imgWrapper {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.imgWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.itemInfo {
+  width: 67%;
+  font-size: 1.8rem;
+}
+
+.itemInfo h1 {
+  font-size: 1.8rem;
+}
+
+.itemInfo .message {
+  color: var(--green);
+}
+
+.message i {
+  margin-right: 5px;
+}
+
+.itemInfo .ctrlBtnGroup {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.ctrlBtn {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  background-color: var(--yellow);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 28px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgWrapper {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .itemInfo {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .itemInfo .ctrlBtnGroup {
+    flex-direction: column;
+  }
+
+  .itemInfo .message {
+    text-align: center;
+  }
+
+  .ctrlBtn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

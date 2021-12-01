@@ -1,0 +1,6 @@
+{
+	"name": "RoomItem",
+	"version": "0.0.0",
+	"private": true,
+	"main": "./RoomItem.js"
+}

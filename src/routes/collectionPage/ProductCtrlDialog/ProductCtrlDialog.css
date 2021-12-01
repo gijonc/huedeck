@@ -1,0 +1,86 @@
+@import '../../../components/variables.css';
+
+.itemListModal {
+  background-color: #fff;
+  font-size: 1.3rem;
+  overflow: hidden;
+}
+
+.modalHeader {
+  padding: 25px 15px 0 15px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.modalHeader h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.modalHeader p {
+  color: grey;
+  text-align: right;
+}
+
+.modalContent {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.itemListRow {
+  display: flex;
+  align-items: center;
+  padding: 0 3%;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--background-color);
+  min-height: 9rem;
+}
+
+.imgWrapper {
+  width: 15%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.imgWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.variantOption {
+  display: inline-block;
+  width: 40%;
+}
+
+.variantOption span {
+  display: block;
+  padding: 1px;
+  color: var(--light-black);
+}
+
+.variantPrice {
+  display: inline-block;
+  width: 20%;
+  color: var(--red);
+}
+
+.itemRowCtrl {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+.itemRowCtrl button {
+  text-decoration: unset;
+  padding: 10px 0;
+  width: 90%;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .modalContent {
+    max-height: unset;
+  }
+}

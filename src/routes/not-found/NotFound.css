@@ -1,0 +1,27 @@
+/**
+	Huedeck
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  padding: 0;
+}
+
+.container {
+  background-color: #202427;
+  color: #fff;
+  min-height: 350px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.container h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.homeBtn {
+  composes: button;
+  width: 280px;
+}

@@ -1,0 +1,170 @@
+{
+	"surya": [
+		{
+			"category2": "rugs"
+		},
+		{
+			"category2": "pillows & throws"
+		},
+		{
+			"category2": "lamps"
+		},
+		{
+			"category2": "artwork"
+		},
+		{
+			"category2": "mirrors"
+		},
+		{
+			"category2": "decorative accents"
+		},
+		{
+			"category3": "side & end tables"
+		},
+		{
+			"category3": "accent & garden stools"
+		}
+	],
+
+	"global views": [
+		{
+			"category2": "artwork"
+		},
+		{
+			"category2": "decorative accents"
+		},
+		{
+			"category2": "lamps"
+		},
+		{
+			"category2": "mirrors"
+		},
+		{
+			"category3": "coffee tables"
+		},
+		{
+			"category3": "side & end tables"
+		},
+		{
+			"category3": "accent chests & cabinets"
+		}
+	],
+
+	"whiteline": [
+		{
+			"category2": "kitchen & dining furniture"
+		},
+		{
+			"category3": "sectional sofas"
+		},
+		{
+			"category3": "coffee tables"
+		},
+		{
+			"category3": "side & end tables"
+		},
+		{
+			"category3": "armchairs & accent chairs"
+		},
+		{
+			"category3": "console tables"
+		},
+		{
+			"category3": "entertainment centers & tv stands"
+		},
+		{
+			"category3": "sofas"
+		}
+	],
+
+	"walker edison": [
+		{
+			"category3": "coffee tables"
+		},
+		{
+			"category3": "side & end tables"
+		},
+		{
+			"category2": "living room furniture",
+			"category3": "console tables"
+		},
+		{
+			"category3": "bookcases"
+		},
+		{
+			"category2": "kitchen & dining furniture"
+		},
+		{
+			"category2": "entryway furniture"
+		}
+	],
+
+	"olliix": [
+		{
+			"category3": "armchairs & accent chairs"
+		},
+		{
+			"category2": "wall decor"
+		},
+		{
+			"category2": "pillows & throws"
+		},
+		{
+			"category2": "window treatments"
+		},
+		{
+			"category3": "side & end tables"
+		},
+		{
+			"category2": "lamps"
+		},
+		{
+			"category2": "kitchen & dining furniture"
+		},
+		{
+			"category2": "decorative accents"
+		}
+	],
+
+	"npd": [
+		{
+			"category2": "home office furniture"
+		},
+		{
+			"category3": "armchairs & accent chairs"
+		},
+		{
+			"category3": "footstools & ottomans"
+		},
+		{
+			"category3": "side & end tables"
+		},
+		{
+			"category3": "benches"
+		},
+		{
+			"category3": "bar stools & counter stools"
+		},
+		{
+			"category3": "dining chairs"
+		},
+		{
+			"category3": "dining tables"
+		}
+	],
+
+	"huedeck": [
+		{
+			"category3": "armchairs & accent chairs"
+		},
+		{
+			"category3": "sofas"
+		},
+		{
+			"category3": "sectional sofas"
+		},
+		{
+			"category3": "love seats"
+		}
+	]
+}

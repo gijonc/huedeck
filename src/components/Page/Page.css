@@ -1,0 +1,17 @@
+/**
+ *	Huedeck, Inc.
+ */
+
+@import '../variables.css';
+
+.root {
+  padding: 0 var(--header-padding);
+  background-color: var(--background-color);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+  font-size: 1.4rem;
+  padding: 1%;
+}

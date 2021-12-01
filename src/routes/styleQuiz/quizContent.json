@@ -1,0 +1,87 @@
+{
+	"order": ["roomType", "style", "color", "colorMood", "budget"],
+
+	"roomType": [
+		{
+			"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/LegacyTrendCatalogSpring2018Main-styleshot_101.jpeg",
+			"name": "living-room"
+		},
+		{
+			"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/LowCostAssortmentMay2018-roomscene_001.jpeg",
+			"name": "bedroom"
+		},
+		{
+			"imgSrc": "https://storage.googleapis.com/huedeck/img/style-quiz/hap1000Round-styleshot_201.jpg",
+			"name": "kitchen-&-dining-room"
+		}
+	],
+
+	"style": [
+		{
+			"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/ams1011-roomscene_201.jpeg",
+			"values": ["classic", "contemporary", "glam", "global", "modern", "traditional"]
+		},
+		{
+			"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/tbt2304-roomscene_003.jpeg",
+			"values": ["contemporary", "glam", "industrial", "modern", "scandinavian"]
+		},
+		{
+			"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/YoungTraditionalTrendCatalogFall2018Main-styleshot_001.jpeg",
+			"values": ["classic", "farmhouse", "transitional", "craftsman", "asian"]
+		},
+		{
+			"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/LuxuryAssortmentFebruary2018-styleshot_001.jpeg",
+			"values": ["classic", "contemporary", "modern", "rustic", "industrial"]
+		},
+		{
+			"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/IndigoTrendFall2016-styleshot_001.jpeg",
+			"values": [
+				"beach style",
+				"tropical",
+				"midcentury",
+				"farmhouse",
+				"craftsman",
+				"mediterranean"
+			]
+		},
+		{
+			"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/frontcovercatalogfall2017instinct-styleshot_201.jpeg",
+			"values": ["classic", "contemporary", "modern", "rustic", "traditional", "eclectic"]
+		}
+	],
+
+	"colorMood": [
+		[
+			{
+				"name": "deep",
+				"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/BespokeTrendFall2016-styleshot_106.jpeg"
+			},
+			{
+				"name": "light",
+				"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/FrontCoverCatalogSpring2017-styleshot_104.jpeg"
+			}
+		],
+		[
+			{
+				"name": "neutral",
+				"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/InstinctTrendFall2017Main-styleshot_201.jpeg"
+			},
+			{
+				"name": "colorful",
+				"imgSrc": "https://storage.googleapis.com/huedeck/img/style-quiz/colorful.jpeg"
+			}
+		],
+		[
+			{
+				"name": "warm",
+				"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/ban3344-roomscene_001.jpeg"
+			},
+			{
+				"name": "cool",
+				"imgSrc": "https://storage.googleapis.com/huedeck/img/roomScene/512/ban3343-roomscene_202.jpeg"
+			}
+		]
+	],
+
+	"budget": [[0, 500], [500, 1000], [1000, 3000], [3000, 5000]]
+}

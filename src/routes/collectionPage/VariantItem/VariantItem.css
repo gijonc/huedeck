@@ -1,0 +1,187 @@
+@import '../../../components/variables.css';
+
+.itemWrapper {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  width: 18%;
+  margin: 1%;
+  padding: 0;
+  padding-bottom: 25%;
+  border-radius: 2%;
+  composes: boxShadow;
+  color: var(--black);
+  text-decoration: none;
+  text-align: left;
+  overflow: hidden;
+  font-size: 1em;
+  z-index: 0;
+}
+
+/** tags */
+.ribbon {
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  overflow: hidden;
+  width: 90px;
+  height: 90px;
+  text-align: right;
+  z-index: 2;
+}
+
+.ribbon > span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 130px;
+  display: block;
+  background: linear-gradient(#f70505 0%, #8f0808 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 25px;
+  left: -30px;
+}
+
+.ribbon > span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border-left: 3px solid #8f0808;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #8f0808;
+}
+
+.ribbon span::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 100%;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #8f0808;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #8f0808;
+}
+
+.itemWrapper:hover {
+  -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+}
+
+.itemWrapper > div {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.itemWrapper > div > span {
+  overflow: hidden;
+}
+
+.itemWrapper .imageWrapper {
+  padding: 5%;
+  height: 55%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.imageWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
+}
+
+/* preload and error wrapper */
+.itemWrapper .imageWrapper > div {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  pointer-events: none;
+  color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemWrapper .itemInfo {
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 55%;
+  height: 45%;
+  padding: 0 5%;
+  color: var(--black);
+}
+
+.itemInfo .title {
+  padding-top: 10px;
+}
+
+.itemWrapper .itemInfo .nowPrice {
+  padding-top: 3%;
+  font-weight: 500;
+  padding-bottom: 3%;
+  background: url('../../../assets/img/price-tag.png') no-repeat left;
+  background-size: 10% auto;
+  color: var(--black);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.05em;
+}
+
+.itemWrapper .itemInfo .originPrice {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 0.9em;
+}
+
+.itemCtrl {
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.itemCtrl > div {
+  width: 85%;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+.addToCartBtn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--yellow);
+  border-radius: 50%;
+}
+
+.addToCartBtn i {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .itemWrapper {
+    width: 31%;
+    padding-bottom: 41%;
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .itemWrapper {
+    width: 48%;
+    padding-bottom: 65%;
+    font-size: 0.95em;
+  }
+}

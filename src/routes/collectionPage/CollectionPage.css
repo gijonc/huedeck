@@ -1,0 +1,224 @@
+/**
+	Huedeck
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  padding: 0 var(--header-padding);
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--max-content-width);
+  padding: 2% 0;
+}
+
+.mainContent {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.collectionInfoSection,
+.itemListSection {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.itemListSection {
+  width: 70%;
+}
+
+.collectionInfoSection {
+  width: 29%;
+}
+
+/* ************************************************
+ * Left side Content
+ */
+.addingCartSpinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: var(--yellow);
+  z-index: var(--over-top);
+}
+
+.itemGridContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.paletteList > div {
+  width: 20%;
+  display: inline-block;
+}
+
+.color {
+  width: 92%;
+  padding-bottom: 48%;
+  border-radius: 6px;
+  composes: paletteBoxShadow;
+  margin: 0 auto;
+}
+
+.showMoreBtn {
+  composes: button;
+  width: auto;
+  color: #fff;
+  background-color: #4bc2d4;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+/*
+ * collection info content
+ */
+.titleAuthor {
+  line-height: 1.5;
+}
+
+.titleAuthor h1 {
+  text-transform: capitalize;
+  color: var(--black);
+  font-size: 3.3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.titleAuthor span {
+  font-weight: 500;
+  color: var(--sky-blue);
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  display: block;
+  text-align: right;
+}
+
+.likeShare {
+  padding: 3% 0;
+  text-align: right;
+  border-bottom: 1px solid var(--background-color);
+}
+
+.saveBtn,
+.iconBtn {
+  border-radius: 4px;
+  color: var(--light-black);
+  margin-left: 15px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border: 1px solid lightgrey;
+  text-transform: capitalize;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  height: 32px;
+  outline: none;
+  cursor: pointer;
+}
+
+.iconBtn {
+  width: 32px;
+}
+
+.tagListContainer {
+  padding: 2% 0;
+  border-bottom: 1px solid var(--background-color);
+}
+
+.tag {
+  display: inline-block;
+  padding: 1%;
+}
+
+.tag > span {
+  text-transform: capitalize;
+  display: block;
+  padding: 5px 10px;
+  white-space: nowrap;
+  border: 1px solid var(--black);
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 28px;
+}
+
+.descriptionContainer {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--black);
+  border-bottom: 1px solid var(--background-color);
+  line-height: 1.5;
+}
+
+.imgSlider {
+  text-align: center;
+  border-bottom: 1px solid var(--background-color);
+  padding: 2% 0;
+}
+
+.imgSlider h2 {
+  color: var(--light-black);
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.imgSlider img {
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .root {
+    padding: 0;
+  }
+
+  .titleAuthor,
+  .titleAuthor span,
+  .likeShare,
+  .tagListContainer {
+    padding: 1% 0;
+    text-align: center !important;
+  }
+
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .collectionInfoSection,
+  .itemListSection {
+    width: 100%;
+  }
+
+  .itemListSection {
+    padding: 2% 0;
+  }
+
+  .collectionInfoSection {
+    padding: 0 2%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tagListContainer,
+  .descriptionContainer {
+    display: none;
+  }
+
+  .imgSlider h2 {
+    display: none;
+  }
+
+  .color {
+    padding-bottom: 60%;
+  }
+}

@@ -1,0 +1,32 @@
+/**
+ * Huedeck, Inc
+ */
+
+@import '../../components/variables.css';
+
+.title {
+  font-family: var(--font-family-regular);
+  font-size: 2rem;
+  color: var(--black);
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.dismissBtn,
+.confirmBtn {
+  margin: 0 10px;
+  margin-bottom: 1%;
+  width: auto;
+  padding: 5px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.dismissBtn {
+  color: var(--red);
+}
+
+.confirmBtn {
+  color: var(--black);
+}

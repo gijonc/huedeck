@@ -1,0 +1,148 @@
+/**
+ * Huedeck, Inc
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  padding: var(--padding-height) var(--header-padding);
+  min-height: 50vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--max-content-width);
+  font-size: 1.5rem;
+}
+
+.container h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.cartList {
+  display: block;
+}
+
+.checkout {
+  text-align: right;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.subTotal {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2.5rem;
+  margin-right: 5%;
+}
+
+.subTotal > p {
+  font-style: italic;
+  letter-spacing: 0.2px;
+  color: grey;
+  font-size: 1.5rem;
+}
+
+.subTotalPrice {
+  color: var(--red);
+  margin-left: 20px;
+}
+
+.checkoutBtn {
+  composes: button;
+  text-transform: unset;
+  width: 220px;
+}
+
+/* update item dialog */
+.dialogContainer {
+  padding: 2% 3%;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+.dialogContainer h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.dialogItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid lightgray;
+}
+
+.dialogItem:last-child {
+  border-bottom: 1px solid lightgray;
+}
+
+.dialogItem .imgWrapper {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.imgWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.dialogItem .dialogItemInfo {
+  width: 75%;
+}
+
+.dialogItemInfo span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.dialogItemInfo strong {
+  color: var(--red);
+  margin-left: 5px;
+}
+
+.dialogUpdateBtn {
+  padding: 10px 18px;
+  font-size: 14px;
+  width: auto;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--light-blue);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 28px;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    padding: var(--padding-height) 1%;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .subTotal {
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .checkout {
+    text-align: center;
+  }
+
+  .dialogItem .imgWrapper {
+    width: 23%;
+  }
+
+  .dialogUpdateBtn {
+    width: 100%;
+  }
+}

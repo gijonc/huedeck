@@ -1,0 +1,187 @@
+/**
+ * Huedeck, Inc.
+ */
+
+@import '../../../components/variables.css';
+
+.container {
+  text-align: center;
+  color: var(--black);
+}
+
+.container h1 {
+  font-size: 3.8rem;
+}
+
+.container h1 a {
+  font-size: 0.7em;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  margin-left: 7px;
+  color: var(--sky-blue);
+}
+
+.container p {
+  font-size: 1.8rem;
+  max-width: 70%;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.shopByColor {
+  margin: 0 auto;
+  width: 78%;
+  padding: 2% 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.navBtnBack {
+  right: -8%;
+}
+
+.navBtnForward {
+  left: -8%;
+}
+
+.navBtnBack,
+.navBtnForward {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+}
+
+.navBtn {
+  padding: 1.3rem;
+}
+
+.navBtn > svg {
+  font-size: 40px;
+}
+
+.navBtn:hover {
+  background: var(--background-color);
+  border-radius: 2px;
+}
+
+.paletteList,
+.productList {
+  width: 100%;
+  padding: 1% 0;
+}
+
+.paletteList > div {
+  width: 20%;
+  display: inline-block;
+}
+
+.color {
+  width: 80%;
+  padding-bottom: 40%;
+  border-radius: 6px;
+  composes: paletteBoxShadow;
+  margin: 0 auto;
+}
+
+.subNavList {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.subNavList > button {
+  height: 4px;
+  width: 13px;
+  background: lightgrey;
+  border-radius: 1px;
+  margin: 0 7px;
+}
+
+.productImgWrapper {
+  width: 20%;
+  padding-bottom: 20%;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #fff;
+}
+
+.productImgWrapper:hover {
+  border-color: lightgray;
+}
+
+.productImgWrapper img {
+  width: 93%;
+  border-radius: 4px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.btnGroup {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.shopPaletteBtn {
+  composes: button;
+  border: 1px solid var(--black);
+  width: auto;
+  text-transform: unset;
+}
+
+.pickColorBtn {
+  composes: button;
+  border: 1px solid var(--black);
+  background: #fff;
+  padding: 4px 8px;
+  width: auto;
+  font-size: 14px;
+  margin-left: 2%;
+  text-transform: unset;
+}
+
+@media screen and (max-width: 720px) {
+  .container h1 {
+    font-size: 3.5rem;
+  }
+
+  .container p {
+    font-size: 1.8rem;
+    max-width: 100%;
+  }
+
+  .shopByColor {
+    width: 100%;
+  }
+
+  .color {
+    padding-bottom: 50%;
+    border-radius: 3px;
+  }
+
+  .navBtnBack,
+  .navBtnForward {
+    top: unset;
+    bottom: 24%;
+  }
+
+  .navBtnBack {
+    right: 10%;
+  }
+
+  .navBtnForward {
+    left: 10%;
+  }
+
+  .subNavList {
+    padding: 30px 0;
+  }
+}

@@ -1,0 +1,50 @@
+/*
+	Huedeck, Inc.
+*/
+
+@import '../../../components/variables.css';
+
+.container {
+  border-top: 1px solid var(--light-blue);
+  padding: 1% 0;
+}
+
+.title h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.pageInfo {
+  color: var(--light-black);
+  font-size: 1.3rem;
+  text-align: right;
+  margin: 5px 1%;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: center;
+}
+
+.listPagingBtn {
+  padding: 0.7rem;
+  border: 2px solid var(--light-black);
+  color: var(--light-black);
+  border-radius: 50%;
+  margin: 0 1%;
+}
+
+@media screen and (max-width: 600px) {
+  .btnGroup {
+    justify-content: center;
+  }
+
+  .btnGroup > button {
+    margin: 0 5%;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+}

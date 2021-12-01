@@ -1,0 +1,149 @@
+/**
+ * Huedeck, Inc.
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  font-size: 16px;
+  background: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+}
+
+.showCaseContainer {
+  margin-bottom: 2%;
+  padding: 1%;
+}
+
+.showCaseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+}
+
+.showCaseHeader > h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.showCaseHeader > .showAllBtn {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--sky-blue);
+}
+
+.showCaseContainer > div {
+  text-align: center;
+}
+
+.showCaseItemWrapper {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  box-sizing: border-box;
+  padding: 1%;
+  width: 16.66%;
+}
+
+.showCaseItem {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid lightgrey;
+  background: var(--background-color);
+}
+
+.showCaseItem > .title {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  font-size: 1.4em;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.title > span {
+  display: block;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2px;
+  width: 100%;
+}
+
+.showCaseItem img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.showCaseItem:hover {
+  -moz-box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+}
+
+/* slider section */
+
+.slider {
+  height: 25vw;
+  max-width: var(--max-content-width);
+  max-height: calc(var(--max-content-width) / 4);
+  margin-bottom: 2%;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider a {
+  outline: none;
+  text-decoration: none;
+}
+
+/* for xl screens */
+@media screen and (min-width: 1440px) {
+  .showCaseContainer {
+    border-radius: 3px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .showCaseItemWrapper {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    font-size: 14px;
+  }
+
+  .showCaseContainer {
+    margin-bottom: 40px;
+  }
+
+  .slider {
+    margin-bottom: 8%;
+  }
+}

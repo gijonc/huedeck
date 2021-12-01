@@ -1,0 +1,186 @@
+@import '../../../components/variables.css';
+
+.itemList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.itemWrapper {
+  box-sizing: border-box;
+  min-height: 320px !important;
+  padding: 7px;
+  display: inline-flex;
+  flex: 0 0 16.6%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  composes: boxShadow;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+/** tags */
+.ribbon {
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  overflow: hidden;
+  width: 90px;
+  height: 90px;
+  text-align: right;
+  z-index: 2;
+}
+
+.ribbon > span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 130px;
+  display: block;
+  background: linear-gradient(#f70505 0%, #8f0808 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 25px;
+  left: -30px;
+}
+
+.ribbon > span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border-left: 3px solid #8f0808;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #8f0808;
+}
+
+.ribbon span::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 100%;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #8f0808;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #8f0808;
+}
+
+.imageWrapper {
+  padding: 5%;
+  height: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  background: rgba(238, 238, 235, 0.5);
+  border-radius: 2px;
+  text-align: center;
+}
+
+.frame > span {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.frame img {
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.itemInfo {
+  padding: 0 5%;
+  color: var(--black);
+}
+
+.itemInfo .title {
+  margin-top: 3%;
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  text-decoration: none;
+  overflow: hidden;
+  max-height: 3em;
+  line-height: 1.5em;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 1.05em;
+}
+
+.itemInfo .title:hover {
+  text-decoration: underline;
+}
+
+.itemInfo .price {
+  padding: 3% 0;
+  height: 3em;
+  line-height: 1.5em;
+  background: url('../../../assets/img/price-tag.png') no-repeat left top 15%;
+  background-size: 10% auto;
+}
+
+.price > div {
+  padding-left: 12%;
+}
+
+.price .curPrice {
+  font-weight: 500;
+  color: var(--black);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.2em;
+}
+
+.price .oldPrice {
+  text-decoration: line-through;
+  color: grey;
+}
+
+@media screen and (max-width: 1440px) {
+  .itemWrapper {
+    flex: 0 0 20% !important;
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .itemWrapper {
+    flex: 0 0 33.3% !important;
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .itemWrapper {
+    flex: 0 0 50% !important;
+    font-size: 12px !important;
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .itemWrapper {
+    padding: 2px;
+    font-size: 11px !important;
+  }
+}

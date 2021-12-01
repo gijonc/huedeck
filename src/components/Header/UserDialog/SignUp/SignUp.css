@@ -1,0 +1,20 @@
+/**
+ *	Huedeck, Inc.
+ */
+
+@import '../UserDialog.css';
+
+.loading {
+  pointer-events: none;
+}
+
+.agreeTerm::before {
+  content: "I've read and agree to the ";
+  font-size: 1.2rem;
+  color: var(--black);
+}
+
+.agreeTerm > a {
+  color: var(--sky-blue);
+  font-size: 1.2rem;
+}

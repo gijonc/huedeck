@@ -1,0 +1,222 @@
+
+@import '../HowItWorks.css';
+
+.section {
+  align-items: unset;
+}
+
+.container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.logosWrapper {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logosWrapper .logo1 {
+  background-image: url('https://storage.googleapis.com/huedeck/img/home/s2_logo1.png');
+}
+
+.logosWrapper .logo2 {
+  background-image: url('https://storage.googleapis.com/huedeck/img/home/s2_logo2.png');
+}
+
+.logosWrapper .logo3 {
+  background-image: url('https://storage.googleapis.com/huedeck/img/home/s2_logo3.png');
+}
+
+.logosWrapper .logo4 {
+  background-image: url('https://storage.googleapis.com/huedeck/img/home/s2_logo4.png');
+}
+
+.logosWrapper .logo5 {
+  background-image: url('https://storage.googleapis.com/huedeck/img/home/s2_logo5.png');
+}
+
+.logosWrapper div {
+  border: 2px solid var(--light-blue);
+  padding: 3.5% 0;
+  width: 18%;
+  border-radius: 0.5rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 85% auto;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.leftPart {
+  text-align: left;
+}
+
+.leftPart button {
+  margin-top: 5%;
+  width: 18rem;
+}
+
+.rightPart {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+
+  /* align-items: center; */
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+.arrowIcon {
+  margin: 0 1%;
+  display: block;
+  background-image: url('../../../assets/img/workFlowArrow.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  opacity: 0.3;
+  height: 3.5rem;
+  min-width: 3.5rem;
+  margin-top: 6.1rem;
+}
+
+.card {
+  width: 23.5rem;
+  height: 31rem;
+  display: inline-flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 2%;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cardImgWrapper {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cardImgWrapper img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+.cardImgWrapper .imgIdx {
+  width: 2.7rem;
+  height: 2.7rem;
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+}
+
+.cardTitle {
+  font-weight: 600;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3;
+  font-size: 1.6rem;
+}
+
+.cardDesc {
+  text-align: left;
+  font-size: 1.4rem;
+  height: 30%;
+  line-height: 1.5;
+  padding: 1% 0;
+  box-sizing: border-box;
+  border-top: 1px solid var(--sky-blue);
+  color: var(--light-black);
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    height: 75%;
+    box-sizing: border-box;
+  }
+
+  .mainContent {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .leftPart {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .leftPart br {
+    display: none;
+  }
+
+  .rightPart {
+    background-color: var(--background-color);
+    justify-content: flex-start;
+  }
+
+  .arrowIcon:first-child {
+    display: none;
+  }
+
+  .cardImgWrapper .imgIdx {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 93%;
+  }
+
+  .logosWrapper {
+    overflow: auto;
+    padding: 2%;
+    flex-shrink: 0;
+    justify-content: flex-start;
+  }
+
+  .logosWrapper div {
+    padding: 3rem 8rem;
+    background-size: 80% auto;
+    margin: 0 1.5%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    height: 100%;
+  }
+}

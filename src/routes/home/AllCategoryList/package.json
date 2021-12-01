@@ -1,0 +1,6 @@
+{
+	"name": "AllCategoryList",
+	"version": "0.0.0",
+	"private": true,
+	"main": "./AllCategoryList.js"
+}

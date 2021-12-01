@@ -1,0 +1,220 @@
+
+@import '../HowItWorks.css';
+
+.section {
+  background-image: url('https://storage.googleapis.com/huedeck/img/home/s4_bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.container {
+  position: relative;
+  height: 70%;
+  margin-left: 2%;
+  width: 78%;
+}
+
+.container .title {
+  position: absolute;
+}
+
+.container .designShowCase {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.reviewCard {
+  background-color: #fff;
+  width: 22rem;
+  padding: 2%;
+  border-radius: 8px;
+  margin-right: 3%;
+}
+
+.reviewCard .cardHeader {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 500;
+  background-image: url('../../../assets/img/icon-user.png');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  padding-left: 13%;
+}
+
+.reviewCard .cardHeader > svg {
+  color: var(--yellow);
+  margin-right: 0.5rem;
+}
+
+.reviewCard p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--light-black);
+}
+
+.imgBefore {
+  width: 23%;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgAfterAndPalette {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.imgAfterAndPalette .imgAfter {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgAfter img,
+.imgBefore img {
+  border-radius: 50%;
+}
+
+.imgBefore > span,
+.imgAfter > span {
+  font-size: 1.4rem;
+  display: flex;
+  position: absolute;
+  border-radius: 2rem;
+  background: #fff;
+  padding: 1% 3%;
+  top: 50%;
+  left: 5%;
+}
+
+.imgBefore > span {
+  top: 44%;
+}
+
+.imgAfterAndPalette .imgPalette {
+  width: 15%;
+  padding: 2% 0;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.imgPalette > span {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 5% 0;
+}
+
+.paletteWrapper {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.paletteBlock {
+  width: 55%;
+  margin: 5%;
+  padding-bottom: 55%;
+  border-radius: 0.5rem;
+  composes: paletteBoxShadow;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section {
+    height: 240vw;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 96%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .container.title {
+    margin: 0 auto;
+  }
+
+  .title br {
+    display: none;
+  }
+
+  .designShowCase {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .imgAfterAndPalette {
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .imgAfterAndPalette .imgAfter {
+    width: 70%;
+  }
+
+  .imgAfterAndPalette .imgPalette {
+    margin-top: 5%;
+    width: 60%;
+  }
+
+  .imgPalette > span > br {
+    display: none;
+  }
+
+  .imgPalette .paletteWrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .paletteWrapper > .paletteBlock {
+    width: 16%;
+    margin: 0;
+    padding-bottom: 16%;
+    border-radius: 0.5rem;
+  }
+
+  .imgBefore {
+    width: 70%;
+    align-self: center;
+    margin: 5% 0;
+  }
+
+  .reviewCard {
+    text-align: left;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section {
+    height: 275vw !important;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+  }
+}

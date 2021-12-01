@@ -1,0 +1,79 @@
+/**
+ *	Huedeck, Inc
+ */
+@import '../../components/variables.css';
+
+.root {
+  padding: var(--padding-height) var(--header-padding);
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--max-content-width-xl);
+}
+
+.stepperContainer {
+  display: flex;
+  flex-shrink: 0;
+  padding-bottom: var(--padding-height);
+  overflow-x: auto;
+}
+
+.stepperContainer a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--light-black);
+  padding-right: 7px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.stepperContainer a:hover {
+  text-decoration: underline;
+}
+
+.stepper::after {
+  font-size: 2rem;
+  content: '/';
+  padding-right: 7px;
+  color: lightgrey;
+}
+
+.stepper:last-child::after {
+  content: '';
+}
+
+.stepper:last-child a {
+  font-weight: 500;
+  pointer-events: none;
+  color: var(--black);
+}
+
+.pagingCtrl {
+  display: flex;
+  margin-top: 30px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.pagingCtrl .pageBtn {
+  padding: 10px 0;
+  width: 45px;
+  text-align: center;
+  font-size: 15px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.pageBtn:hover {
+  background: var(--background-color);
+}
+
+@media screen and (max-width: 600px) {
+  .stepperContainer {
+    padding-left: 7px;
+  }
+}

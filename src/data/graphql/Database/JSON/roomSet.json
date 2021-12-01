@@ -1,0 +1,176 @@
+{
+	"living-room": [
+		{
+			"key": "category2",
+			"name": "pillow",
+			"values": ["pillows & throws"],
+			"limit": 5
+		},
+		{
+			"key": "category2",
+			"name": "decors",
+			"values": ["clocks", "artwork", "wall decor"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "rug",
+			"values": ["area rugs"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "lamp",
+			"values": ["floor lamps", "table lamps", "chandeliers"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "stool",
+			"values": ["accent & garden stools"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "bookcase",
+			"values": ["bookcases"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "cabinet",
+			"values": [
+				"entertainment centers & tv stands",
+				"media cabinets",
+				"accent chests & cabinets"
+			],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "sofa",
+			"values": ["sofas", "sectional sofas", "love seats", "sleeper sofas"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "chair",
+			"values": [
+				"benches",
+				"footstools & ottomans",
+				"armchairs & accent chairs",
+				"recliner chairs",
+				"chaise lounge chairs"
+			],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "table",
+			"values": ["coffee tables", "side & end tables", "console tables"],
+			"limit": 5
+		},
+		{
+			"key": "category2",
+			"name": "window",
+			"values": ["window treatments"],
+			"limit": 5
+		}
+	],
+
+	"bedroom": [
+		{
+			"key": "category3",
+			"name": "bedside table",
+			"values": ["nightstands & Bedside tables"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "recliner chairs",
+			"values": ["recliner-chairs", "chaise-lounge-chairs"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "bookcase",
+			"values": ["bookcases"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "bench",
+			"values": ["benches"],
+			"limit": 5
+		},
+		{
+			"key": "category2",
+			"name": "desk & chair",
+			"values": ["home office furniture"],
+			"limit": 5
+		},
+		{
+			"key": "category2",
+			"name": "decors",
+			"values": ["clocks", "artwork", "wall decor"],
+			"limit": 5
+		},
+		{
+			"key": "category2",
+			"name": "pillow",
+			"values": ["pillows & throws"],
+			"limit": 5
+		},
+		{
+			"key": "category2",
+			"name": "lamp",
+			"values": ["lamps"],
+			"limit": 5
+		}
+	],
+
+	"kitchen-&-dining-room": [
+		{
+			"key": "category3",
+			"name": "dining chairs",
+			"values": ["dining chairs"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "dining tables",
+			"values": ["dining tables"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "dining Bench",
+			"values": ["dining benches"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "bar stools & counter stools",
+			"values": ["bar-stools-&-counter-stools"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "bar cart",
+			"values": ["bar carts"],
+			"limit": 5
+		},
+		{
+			"key": "category3",
+			"name": "buffert & sideboard",
+			"values": ["buffets-&-sideboards"],
+			"limit": 5
+		},
+		{
+			"key": "category2",
+			"name": "decorative accents",
+			"values": ["decorative accents"],
+			"limit": 5
+		}
+	]
+}

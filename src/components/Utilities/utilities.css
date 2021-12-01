@@ -1,0 +1,85 @@
+/**
+ *	Huedeck, Inc.
+ */
+
+@import '../variables.css';
+
+.closeButton {
+  position: absolute;
+  right: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+
+.closeButton span {
+  font-size: 25px !important;
+  color: grey;
+}
+
+.scrollTopBtn {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  color: #ccc;
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  font-size: 22px;
+  padding: 8px;
+  z-index: var(--over-top);
+  background: #fff;
+  composes: paletteBoxShadow;
+}
+
+.scrollTopBtn:hover {
+  border-color: grey;
+  color: grey;
+}
+
+/*
+ *	LineThrough
+ */
+
+.lineThrough {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  font-size: 90%;
+  color: lightgray;
+  text-align: center;
+  font-weight: 500;
+}
+
+.lineThrough::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  margin-top: -5px;
+  margin-left: -20px;
+  width: 40px;
+  height: 10px;
+  background-color: #fff;
+  content: '';
+}
+
+.lineThrough::after {
+  position: absolute;
+  top: 49%;
+  z-index: -2;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  content: '';
+}
+
+@media screen and (max-width: 600px) {
+  .scrollTopBtn {
+    bottom: 2%;
+  }
+}

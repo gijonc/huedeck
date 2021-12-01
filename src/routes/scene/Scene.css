@@ -1,0 +1,56 @@
+/**
+ * Huedeck, Inc.
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  padding: 1% var(--header-padding);
+}
+
+.root > h1 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.masonryContainer {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.imgWrapper {
+  padding: 1%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.imgLink {
+  display: block;
+  z-index: 0;
+  transition: all 0.2s;
+  cursor: zoom-in;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  background: var(--background-color);
+}
+
+.imgLink:hover {
+  z-index: 1 !important;
+  border-color: lightgray;
+  -webkit-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.2);
+}
+
+.imgLink > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .imgLink {
+    border: none;
+  }
+}

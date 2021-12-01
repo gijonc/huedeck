@@ -1,0 +1,114 @@
+/**
+ * Huedeck, Inc
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  padding: var(--padding-height) var(--header-padding);
+  min-height: 50vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  font-size: 1.4rem;
+}
+
+.container h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.orderWrapper {
+  border: 1px solid lightgrey;
+  border-radius: 0.5rem;
+  margin-bottom: 50px;
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5% 2%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.headerContent div {
+  font-weight: 500;
+  color: var(--black);
+  padding: 5px 0;
+}
+
+.headerContent span {
+  color: var(--light-black);
+  font-size: 1.3rem;
+}
+
+.orderHeader .orderCtrl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.orderCtrl > button {
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  width: auto;
+  font-weight: 400;
+}
+
+.orderCtrl > button:first-child {
+  margin-bottom: 10px;
+}
+
+.fullfillmentListContainer {
+  overflow: auto;
+  padding: 2%;
+}
+
+.fulfillment {
+  background-color: #fff;
+  box-sizing: border-box;
+  border-bottom: 1px solid lightgrey;
+}
+
+.fulfillment:last-child {
+  border: none;
+}
+
+.fulfillmentStatus {
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.fulfillmentStatus h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--sky-blue);
+}
+
+.fulfillment .tracking {
+  margin-bottom: 2%;
+  color: var(--light-black);
+  font-size: 1.2rem;
+}
+
+.tracking > a {
+  color: var(--light-black);
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container h1 {
+    text-align: center;
+  }
+
+  .orderWrapper {
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+  }
+}

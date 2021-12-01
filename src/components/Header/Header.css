@@ -1,0 +1,227 @@
+/**
+ *	Huedeck, Inc.
+ */
+
+@import '../variables.css';
+
+.root {
+  max-width: var(--max-content-width-xl);
+  z-index: 99999 !important;
+}
+
+/* progress bar styles */
+
+.progressBar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed !important;
+  z-index: 99999 !important;
+}
+
+.linearColorPrimary {
+  background-color: var(--background-color) !important;
+}
+
+.linearBarColorPrimary {
+  background-color: var(--yellow) !important;
+}
+
+/* header styles */
+
+.container {
+  padding: 0 var(--header-padding);
+  height: var(--header-height);
+  box-sizing: border-box;
+  width: 100%;
+  z-index: var(--on-top) !important;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-size: 16px;
+}
+
+.headerContainer > div {
+  width: 33.33%;
+  padding-top: 3px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContainer > div:first-child {
+  justify-content: flex-start;
+}
+
+.headerContainer > div:last-child {
+  justify-content: flex-end;
+}
+
+.brand {
+  font-size: 1.9em;
+  text-transform: uppercase;
+  font-family: var(--font-family-heavy);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.link {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  margin: 0 0.5em;
+  color: var(--black);
+  font-weight: 600;
+  font-family: var(--font-family-heavy);
+  font-size: 1em;
+}
+
+/* mobile version nav */
+
+.miniNav {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  color: var(--black);
+}
+
+.miniNav button {
+  text-align: right;
+  padding: 10px;
+}
+
+.miniNav .link {
+  justify-content: flex-end;
+  padding: 15px;
+  font-size: 1.6em;
+  font-weight: 400;
+  width: 100%;
+}
+
+/* User Activity */
+
+.dropdown {
+  z-index: var(--over-top);
+}
+
+.dropdownContent::after {
+  content: '';
+  position: absolute;
+  right: 13px;
+  top: -9px;
+  border-style: solid;
+  border-width: 0 16px 16px 16px;
+  border-color: lightgrey transparent #fff transparent;
+  border-radius: 2px;
+}
+
+.dropdownContent {
+  border-top: 7px solid #fff;
+  background-color: #fff;
+  composes: boxShadow;
+  border-radius: 4px;
+  width: 140px;
+}
+
+.dropdownItem > i {
+  margin-right: 10px;
+}
+
+.dropdownItem {
+  padding: 12px 16px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  outline: none;
+  border: none;
+  color: var(--black);
+  white-space: nowrap;
+  font-size: 0.9em;
+  text-transform: capitalize;
+}
+
+.dropdownContent button > i {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.dropdownItem:hover {
+  background: var(--background-color);
+}
+
+.userDialogAction {
+  display: inline-flex;
+}
+
+.cartIcon {
+  display: block;
+  text-decoration: none;
+  padding: 4px 10px 4px 5px;
+  text-align: center;
+  margin: 0 0.3em;
+  color: var(--black);
+  white-space: nowrap;
+}
+
+.cartIcon > div {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.cartIcon svg {
+  font-size: 1.7em;
+}
+
+.cartIcon > span > span {
+  font-size: 0.8em;
+  background-color: var(--yellow);
+  border: 1px solid #fff;
+}
+
+@media screen and (max-width: 720px) {
+  .brand {
+    font-size: 1.6em;
+  }
+
+  .userDialogAction {
+    margin-right: 5%;
+  }
+
+  .userDialogAction button:first-child {
+    display: none;
+    pointer-events: none;
+  }
+
+  .userDialogAction button:last-child {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+  }
+}
+
+/* for ip5E */
+@media screen and (max-width: 320px) {
+  .headerContainer {
+    font-size: 14px;
+  }
+}

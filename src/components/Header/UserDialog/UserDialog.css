@@ -1,0 +1,52 @@
+/**
+ * Huedeck, Inc
+ */
+
+@import '../../../components/variables.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.container h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  font-family: var(--font-family-heavy);
+  font-weight: 600;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.container > button {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: grey;
+}
+
+.formContainer {
+  width: 70%;
+  min-width: 310px;
+}
+
+.formGroup {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.label > span {
+  font-size: 14px;
+  display: block;
+  margin: 8px 0;
+  color: var(--light-black);
+  font-weight: 500;
+}
+
+.submitBtn {
+  composes: button;
+  width: 60%;
+}

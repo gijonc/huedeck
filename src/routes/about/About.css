@@ -1,0 +1,134 @@
+/**
+ * Huedeck, Inc.
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  padding: 0 2%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  font-size: 1.6rem;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+}
+
+.title {
+  width: 85%;
+  padding: 5% 0;
+}
+
+.title h1 {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quoteBefore,
+.quoteAfter {
+  height: 2.3rem;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.quoteBefore {
+  background-image: url('https://storage.googleapis.com/huedeck/img/about/quote1.png');
+}
+
+.quoteAfter {
+  background-image: url('https://storage.googleapis.com/huedeck/img/about/quote2.png');
+  background-position: right;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  padding: 2% 0;
+}
+
+.contentImg {
+  position: absolute;
+  z-index: var(--under-low);
+  top: 0;
+  width: 65%;
+}
+
+.contentImg img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.contentText {
+  box-sizing: border-box;
+  z-index: var(--on-top);
+  margin-top: 15%;
+  margin-bottom: 5%;
+  width: 60%;
+  float: left;
+  padding: 10px 20px;
+  border-radius: 8px;
+  composes: boxShadow;
+  background-color: #fff;
+  text-align: left;
+  min-height: 270px;
+}
+
+.contentText h1 {
+  width: 100%;
+}
+
+.rightAlign .contentText {
+  float: right;
+}
+
+.leftAlign .contentImg {
+  right: 0;
+}
+
+.contentText p {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    padding: 0;
+  }
+
+  .container h1 {
+    font-size: 2.1rem;
+  }
+
+  .title {
+    width: 95%;
+  }
+
+  .contentImg {
+    width: 100%;
+  }
+
+  .contentImg img {
+    border-radius: 0;
+  }
+
+  .contentText {
+    width: 90%;
+    margin: 0 auto;
+    float: unset;
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+
+  .rightAlign .contentText {
+    float: unset;
+  }
+}

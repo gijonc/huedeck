@@ -1,0 +1,96 @@
+/**
+ *	Huedeck, Inc
+ */
+@import '../../../components/variables.css';
+
+.container {
+  position: relative;
+}
+
+.categoryList {
+  /* width: 80%; */
+}
+
+.container > div {
+  /* display: inline-block; */
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+/*
+ *	Products
+ */
+
+.roomCategory {
+  text-align: center;
+  padding: 1% 0;
+  margin-bottom: 2%;
+  composes: boxShadow;
+  border-radius: 4px;
+}
+
+.roomCategory > p {
+  font-size: 2.4rem;
+  margin: 10px 0;
+  color: var(--light-black);
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
+.showMoreBtn {
+  composes: button;
+  background: #fff;
+  -webkit-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid gray;
+  color: gray;
+  width: auto;
+  padding: 5px 10px;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.similarItemContainer {
+  background: #fff;
+}
+
+/*
+ *	Nav
+ */
+
+/* .categoryNav {
+  width: 17%;
+  margin-right: 3%;
+  padding-left: 20px;
+  border-right: 2px solid var(--background-color);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.scrollLink {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 10px 0;
+  text-align: right;
+}
+
+.scrollLink span {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: var(--light-black);
+  font-weight: 600;
+}
+
+.scrollLink:hover .scrollLink span {
+  text-decoration: underline;
+} */
+
+@media screen and (max-width: 600px) {
+  .roomCategory {
+    text-align: left;
+  }
+}

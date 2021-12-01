@@ -1,0 +1,6 @@
+{
+	"name": "ThirdPatyLogInForm",
+	"version": "0.0.0",
+	"private": true,
+	"main": "./ThirdPatyLogInForm.js"
+}

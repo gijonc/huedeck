@@ -1,0 +1,6 @@
+{
+	"name": "Section1",
+	"version": "0.0.0",
+	"private": true,
+	"main": "./Section1.js"
+}

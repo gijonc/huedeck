@@ -1,0 +1,128 @@
+@import '../../../components/variables.css';
+
+.container {
+  max-width: var(--max-content-width-xl);
+  position: relative;
+}
+
+.preloader {
+  max-width: var(--max-content-width-xl);
+  text-align: center;
+  padding: 4% 0;
+}
+
+.preloader i {
+  font-size: 20px;
+  color: lightgrey;
+}
+
+.scrollBtn {
+  position: absolute;
+  padding: 7px;
+  border-radius: 50%;
+  background: var(--sky-blue);
+  z-index: var(--over-top);
+  top: 39%;
+  composes: paletteBoxShadow;
+  opacity: 0.8;
+}
+
+.scrollBtn:hover {
+  opacity: 1;
+}
+
+.scrollBtn svg {
+  color: #fff;
+  font-size: 30px;
+}
+
+.toRight {
+  right: -5px;
+}
+
+.toLeft {
+  left: -5px;
+}
+
+.itemCarousel {
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 1%;
+}
+
+.itemWrapper {
+  display: inline-block;
+  vertical-align: top;
+  width: 16.66%;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 1%;
+}
+
+.card {
+  text-decoration: none;
+  display: block;
+  color: var(--black);
+  border-radius: 5px;
+  composes: paletteBoxShadow;
+}
+
+.imgWrapper {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.imgWrapper > div {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  height: auto;
+  border-radius: 4px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.itemPrices {
+  height: 50px;
+  line-height: 1.5;
+}
+
+.itemPrices .curPrice {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemPrices .oldPrice {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 1200px) {
+  .itemWrapper {
+    width: 20% !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .itemWrapper {
+    width: 25% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .itemWrapper {
+    width: 33.33% !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .itemWrapper {
+    width: 50% !important;
+  }
+}

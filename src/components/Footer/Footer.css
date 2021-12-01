@@ -1,0 +1,109 @@
+/**
+ * Huedeck, Inc
+ */
+
+@import '../variables.css';
+
+.root {
+  padding: 4% var(--header-padding) 5% var(--header-padding);
+  border-top: 1px solid var(--background-color);
+  z-index: var(--over-top);
+  background: var(--background-color);
+}
+
+.container {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--max-content-width);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.brandSection,
+.linkSection {
+  display: inline-flex;
+  width: 30%;
+  min-width: 350px;
+  color: var(--black);
+}
+
+.linkSection {
+  justify-content: space-between;
+}
+
+.linkList {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.linkList > strong {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.link {
+  padding: 8px 0;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.link:hover {
+  color: var(--sky-blue);
+  cursor: pointer;
+}
+
+.brandSection {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.brandSection .socialBtnGroup {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.socialBtn {
+  margin-left: 24px;
+  width: 28px;
+  height: 28px;
+  font-size: 22px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  border-radius: 50%;
+  outline: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .brandSection,
+  .linkSection {
+    width: 100%;
+    min-width: unset;
+    justify-content: space-evenly;
+    padding: 3% 0;
+  }
+
+  .brandSection {
+    border-top: 1px solid var(--background-color);
+    align-items: center;
+  }
+
+  .brandSection .socialBtnGroup {
+    justify-content: center;
+  }
+
+  .socialBtn {
+    margin: 0 1rem;
+    border: 1px solid var(--black);
+  }
+}

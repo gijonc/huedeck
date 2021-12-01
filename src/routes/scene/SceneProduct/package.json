@@ -1,0 +1,6 @@
+{
+	"name": "SceneProduct",
+	"version": "0.0.0",
+	"private": true,
+	"main": "./SceneProduct.js"
+}

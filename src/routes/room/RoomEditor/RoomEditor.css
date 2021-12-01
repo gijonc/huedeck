@@ -1,0 +1,77 @@
+/**
+ *	Huedeck, Inc
+ */
+@import '../../../components/variables.css';
+
+.container {
+  padding: 20px 15px;
+}
+
+.container h1 {
+  text-transform: capitalize;
+}
+
+.roomInfo {
+  font-size: 14px;
+  text-transform: capitalize;
+  border: 1px solid lightgrey;
+  padding-top: 0;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.roomInfo > strong {
+  padding: 5px;
+  border-bottom: 1px solid lightgrey;
+  display: block;
+  color: var(--light-black);
+}
+
+.roomInfo > div {
+  padding: 7px 0;
+}
+
+.selection {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: 4px 8px;
+  border: 1px solid var(--black);
+  border-radius: 28px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.selected {
+  background: var(--yellow);
+}
+
+.optionGroup > button {
+  min-width: 70px;
+}
+
+.optionGroup > button:first-child {
+  border-radius: 28px 0 0 28px;
+  margin: 0;
+}
+
+.optionGroup > button:last-child {
+  border-radius: 0 28px 28px 0;
+  margin-left: -1px;
+}
+
+.colorBlock {
+  padding: 3px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.colorBtn {
+  padding: 8px;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 50%;
+  composes: paletteBoxShadow;
+}

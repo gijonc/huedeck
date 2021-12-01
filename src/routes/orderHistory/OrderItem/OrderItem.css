@@ -1,0 +1,84 @@
+/**
+ * Huedeck, Inc.
+ */
+
+@import '../OrderHistory.css';
+
+.orderItem {
+  display: flex;
+  width: 100%;
+  padding: 2% 0;
+}
+
+.imgWrapper {
+  width: 15%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.imgWrapper img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.itemPalette {
+  width: 4%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  margin: 0 2%;
+  border-radius: 4px;
+  height: 12rem;
+  box-sizing: border-box;
+}
+
+.itemPalette > div {
+  border-radius: 3px;
+  width: 62%;
+  padding-bottom: 62%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.itemInfo {
+  width: 70%;
+  box-sizing: border-box;
+  padding: 1%;
+  display: inline-flex;
+  flex-direction: column;
+  color: var(--black);
+}
+
+.itemInfo > a {
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+  margin-bottom: 5px;
+}
+
+.itemInfo > a:hover {
+  color: var(--sky-blue);
+}
+
+.itemStat {
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .imgWrapper {
+    width: 20%;
+    align-items: flex-start;
+  }
+
+  .itemPalette {
+    width: 6%;
+    height: 10rem;
+  }
+}

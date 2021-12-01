@@ -1,0 +1,102 @@
+/**
+ *	Huedeck
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  width: 100%;
+  max-width: var(--max-content-width-xl);
+}
+
+.sectionNav {
+  position: fixed;
+  top: 30%;
+  z-index: var(--over-top);
+  left: var(--header-padding);
+  display: flex;
+  flex-direction: column;
+}
+
+.navBtn {
+  border-left: 3px solid var(--black);
+  padding: 7px 3px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 5px 0;
+  text-align: left;
+  color: var(--black);
+}
+
+.navBtn > span {
+  visibility: hidden;
+}
+
+.navBtnFocused span,
+.navBtn:hover span {
+  visibility: visible;
+}
+
+.navBtn:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.navBtnFocused {
+  z-index: var(--over-top);
+  border-left: 5px solid var(--yellow);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* commond style for all sections */
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--under-low);
+}
+
+.container {
+  width: 85%;
+  z-index: var(--on-low);
+}
+
+.container h1 {
+  margin: 0;
+  padding: 2px 0.7rem;
+  display: inline-block;
+  background-color: #fff;
+  font-size: 3vw;
+  font-weight: 700;
+  color: var(--black);
+}
+
+@media only screen and (max-width: 1024px) {
+  .section {
+    height: 134vw !important;
+  }
+
+  .container {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sectionNav {
+    display: none;
+  }
+
+  .container h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .section {
+    height: 178vw !important;
+  }
+
+  .container h1 {
+    font-size: 3.5rem;
+  }
+}

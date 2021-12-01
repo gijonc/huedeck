@@ -1,0 +1,141 @@
+/**
+ *	Huedeck, Inc.
+ */
+
+@import '../HowItWorks.css';
+
+.section {
+  background-image: url('https://storage.googleapis.com/huedeck/img/home/s5_bg.jpg');
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftPart {
+  display: block;
+}
+
+.carList {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding: 2%;
+  width: 100%;
+}
+
+.card {
+  background-color: #fff;
+  width: 26rem;
+  height: 36rem;
+  margin-left: 3%;
+  padding: 2%;
+  box-sizing: border-box;
+  border-radius: 0.6rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  -webkit-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.card:first-child {
+  margin: 0;
+}
+
+.cardHeader {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.cardContext {
+  padding: 2% 0;
+}
+
+.cardContext strong {
+  padding-top: 2%;
+  display: block;
+  color: var(--sky-blue);
+}
+
+.cardContext p {
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--light-black);
+}
+
+.cardFooter {
+  padding: 2% 0;
+  border-top: 1px solid var(--light-blue);
+  font-weight: 500;
+  display: flex;
+  background-image: url('../../../assets/img/icon-user.png');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: auto 70%;
+  padding-left: 10%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section {
+    background-position: left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70%;
+  }
+
+  .leftPart {
+    padding: 3% 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  .leftPart > br {
+    display: none;
+  }
+
+  .carList {
+    background-color: var(--background-color);
+    justify-content: flex-start;
+    border-radius: 8px;
+  }
+
+  .card {
+    font-size: 1.5rem;
+    width: 28rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    background-image: url('https://storage.googleapis.com/huedeck/img/home/m/s5_bg.jpg');
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    padding: 3%;
+  }
+}

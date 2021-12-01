@@ -1,0 +1,267 @@
+/**
+ * Huedeck, Inc.
+ */
+
+@import '../../../components/variables.css';
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 var(--header-padding);
+  border-top: 1px solid lightgrey;
+  background: var(--background-color);
+}
+
+.sceneCtrl {
+  position: absolute;
+  z-index: var(--over-top);
+  top: 1%;
+  left: 1%;
+}
+
+.sharePopupBtn,
+.backBtn {
+  padding: 8px 10px;
+  border-radius: 28px;
+  border: 1px solid var(--black);
+  width: auto;
+  background: #fff;
+  display: inline-flex;
+  vertical-align: top;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  composes: paletteBoxShadow;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.backBtn i,
+.sharePopupBtn i {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.content {
+  max-width: 1200px;
+  height: calc(100vh - var(--header-height));
+  margin: 0 auto;
+  display: flex;
+}
+
+.leftPart {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  width: 75%;
+  height: 100%;
+}
+
+.filterPopper {
+  z-index: var(--over-top);
+  margin-top: 1px;
+}
+
+.shareIconGroup {
+  background: #fff;
+  border-radius: 8px;
+  padding: 7px 15px;
+}
+
+.shareIconGroup > span {
+  display: block;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.shareIcon {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  margin: 5px 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.shareIcon i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.sceneImage {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sceneImage img {
+  max-height: 100%;
+  max-width: 100%;
+  transition: all 0.5s;
+}
+
+.productList {
+  display: inline-flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  background: #fff;
+  padding: 1%;
+  overflow: auto;
+  box-sizing: border-box;
+  box-shadow: inset 11px 0 8px -10px #ccc, inset -11px 0 8px -10px #ccc;
+}
+
+.product {
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  text-decoration: none;
+  color: var(--black);
+  border: 1px solid #fff;
+  margin: 10px 0;
+  background: #fff;
+  border-radius: 4px;
+  padding: 5%;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.product:hover {
+  border-color: lightgrey;
+}
+
+.productImgWrapper {
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 85%;
+  position: relative;
+  background: var(--background-color);
+}
+
+.productImgWrapper > div {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.productImgWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.price {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.price > div {
+  padding: 5px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.price .curPrice {
+  font-weight: 500;
+  color: var(--black);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+}
+
+.price .oldPrice {
+  text-decoration: line-through;
+  color: grey;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    overflow: auto;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .backBtn {
+    top: 1%;
+    left: 1%;
+  }
+
+  .sceneImage {
+    width: 100%;
+  }
+
+  .leftPart,
+  .productList {
+    width: 100%;
+  }
+
+  .leftPart {
+    height: 70%;
+  }
+
+  .productList {
+    height: 30%;
+    min-height: 200px;
+    flex-direction: row;
+    box-shadow: inset 0 11px 8px -10px #ccc, inset 0 -11px 8px -10px #ccc;
+    overflow-y: hidden;
+    align-items: center;
+  }
+
+  .product {
+    width: 25%;
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0;
+    margin: 0;
+  }
+
+  .price > div {
+    display: block;
+  }
+
+  .productImgWrapper {
+    width: 60%;
+    padding-bottom: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product {
+    width: 33.3%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    background: #fff;
+  }
+
+  .product {
+    width: 50%;
+    font-size: 12px;
+  }
+}

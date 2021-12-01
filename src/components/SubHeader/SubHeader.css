@@ -1,0 +1,33 @@
+/**
+ *	Huedeck, Inc
+ */
+@import '../variables.css';
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--max-content-width-xl);
+  border-top: 1px solid var(--background-color);
+  border-bottom: 1px solid var(--background-color);
+  background: #fff;
+}
+
+.quickLinkContainer {
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.quickLink {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 14px;
+  color: var(--light-black);
+  text-transform: capitalize;
+}
+
+/* .quickLink:last-child {
+  color: red;
+} */

@@ -1,0 +1,32 @@
+
+/**
+ * Huedeck, Inc.
+ */
+
+@import '../Selector.css';
+
+.colorMoodContainer {
+  margin: 0 auto;
+}
+
+.optionGroup {
+  padding: 3% 0;
+  border-bottom: 2px solid var(--background-color);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.optionGroup:first-child {
+  padding-top: 0;
+}
+
+.imageOption {
+  width: 37%;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .optionGroup {
+    width: 100%;
+  }
+}

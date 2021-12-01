@@ -1,0 +1,59 @@
+/**
+	Huedeck
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  padding: 0 var(--header-padding);
+  min-height: 70vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--max-content-width-xl);
+  font-size: 1.5rem;
+}
+
+.container h1 {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 2.8rem;
+  color: var(--light-black);
+}
+
+/* collection sections */
+
+.preloadingCollection {
+  width: 100%;
+  padding-bottom: 65%;
+  border-radius: 8px;
+  background: var(--background-color);
+  -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  margin-bottom: 3%;
+}
+
+.section:last-child {
+  margin: 0;
+}
+
+.showMore {
+  color: var(--sky-blue);
+  display: inline-block;
+  margin: 1% 0;
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    padding: var(--padding-height) 2%;
+  }
+
+  .container {
+    text-align: center;
+  }
+}

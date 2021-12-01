@@ -1,0 +1,81 @@
+{
+	"home decor": {
+		"pillows & throws": ["decorative pillows", "throws", "floor pillows & poufs"],
+		"decorative accents": [
+			"decorative items",
+			"plants, pots & fountains",
+			"candles & candle holders",
+			"accent & garden stools",
+			"vases",
+			"decorative jars",
+			"decorative plates",
+			"trays",
+			"pedestals",
+			"decorative storage",
+			"screens & room dividers",
+			"art glass"
+		],
+		"lamps": [
+			"table lamps",
+			"floor lamps",
+			"desk lamps",
+			"chandeliers",
+			"pendants lighting",
+			"flush mount lighting",
+			"wall lighting"
+		],
+		"rugs": ["area rugs", "hall & stair runners", "kids rugs", "rug pads"],
+		"mirrors": ["wall mirrors", "floor mirrors"],
+		"wall decor": ["wall accents", "wall panels", "tapestries"],
+		"artwork": [
+			"paintings",
+			"mixed media art",
+			"photographs",
+			"drawings & illustrations",
+			"fine art prints",
+			"sculptures"
+		],
+		"window treatments": ["curtains", "curtain rods", "valances"],
+		"clocks": ["wall clocks"]
+	},
+	"furniture": {
+		"living room furniture": [
+			"sofas",
+			"sectional sofas",
+			"love seats",
+			"sleeper sofas",
+			"coffee tables",
+			"side & end tables",
+			"console tables",
+			"benches",
+			"footstools & ottomans",
+			"armchairs & accent chairs",
+			"recliner chairs",
+			"chaise lounge chairs",
+			"media cabinets",
+			"accent chests & cabinets",
+			"entertainment centers & tv stands",
+			"accent & garden stools",
+			"bookcases"
+		],
+		"kitchen & dining furniture": [
+			"barware",
+			"bar stools & counter stools",
+			"dining chairs",
+			"dining tables",
+			"buffets & sideboards",
+			"bar carts",
+			"dining benches"
+		],
+		"bedroom furniture": ["nightstands & bedside tables"],
+		"home office furniture": ["desks", "office chairs"],
+		"entryway furniture": [
+			"benches",
+			"coatracks & umbrella stands",
+			"console tables",
+			"hall trees",
+			"shoe storage",
+			"display & wall shelves"
+		]
+	}
+}

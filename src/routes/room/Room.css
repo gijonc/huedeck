@@ -1,0 +1,259 @@
+/**
+ *	Huedeck, Inc
+ */
+@import '../../components/variables.css';
+
+.root {
+  padding: var(--padding-height) var(--header-padding);
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 400px;
+  max-width: var(--max-content-width);
+  position: relative;
+}
+
+.startWord {
+  color: var(--black);
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  padding: 5px 0;
+}
+
+.startWord h1 {
+  font-size: 2em;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
+.startWord p {
+  font-size: 1.1em;
+  color: var(--light-black);
+}
+
+.startWord p a {
+  font-size: 1.3em;
+  display: inline-block;
+  vertical-align: bottom;
+  border-radius: 50%;
+  margin-left: 7px;
+  color: var(--sky-blue);
+}
+
+.controlBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editBtn {
+  composes: button;
+  padding: 8px 10px;
+  width: auto;
+  font-size: 14px;
+  border: 1px solid #111;
+  background: #fff;
+  margin: 10px;
+}
+
+.selectRoomWrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+
+.selectRoomBtn {
+  padding-right: 30px;
+  margin: 0;
+  background: url('../../assets/img/select-arrow-24px.svg') 90% / 16px no-repeat #fff;
+}
+
+.viewSwitch {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+.viewSwitch > button {
+  border: 1px solid #111;
+  display: inline-block;
+}
+
+.viewSwitch > button:first-child {
+  border-radius: 28px 0 0 28px;
+  margin: 0;
+}
+
+.viewSwitch > button:last-child {
+  border-radius: 0 28px 28px 0;
+  margin-left: -1px;
+}
+
+.activeView {
+  background: var(--sky-blue);
+  color: #fff;
+  pointer-events: none;
+}
+
+.loader {
+  position: absolute;
+  display: inline-block;
+  top: 15vh;
+  text-align: center;
+  left: 45%;
+  z-index: var(--over-top);
+}
+
+/*
+ * Masonry design
+ */
+
+.paletteContainer {
+  padding: 10px 0;
+}
+
+.paletteContainer > div {
+  width: 20%;
+  display: inline-block;
+}
+
+.color {
+  width: 95%;
+  padding-bottom: 40%;
+  border-radius: 6px;
+  composes: paletteBoxShadow;
+  margin: 0 auto;
+}
+
+/*
+ * Drawer Style
+ */
+
+.drawer {
+  width: 320px;
+}
+
+.drawerHead {
+  top: 0;
+  position: sticky;
+  background: #fff;
+  height: 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--background-color);
+}
+
+.drawerHead > strong {
+  display: block;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.simItemStatus {
+  text-align: center;
+}
+
+.simItemStatus i {
+  font-size: 25px;
+  color: grey;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.productList {
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.product {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  text-decoration: none;
+  color: var(--black);
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.product:hover {
+  border-color: lightgrey;
+  cursor: pointer;
+}
+
+.productImgWrapper {
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.productImgWrapper > div {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.productImgWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.price {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.price > div {
+  padding-top: 5px;
+}
+
+.price .curPrice {
+  font-weight: 500;
+  color: var(--black);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+}
+
+.price .oldPrice {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.loadMoreBtn {
+  display: block;
+  margin: 20px auto;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: var(--sky-blue);
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+  .color {
+    padding-bottom: 50%;
+  }
+
+  .controlBar {
+    flex-direction: column;
+  }
+}

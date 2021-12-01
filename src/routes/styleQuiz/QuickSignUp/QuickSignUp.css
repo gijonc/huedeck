@@ -1,0 +1,37 @@
+/**
+ * Huedeck, Inc.
+ */
+
+@import '../../../components/variables.css';
+@import '../../../components/Header/UserDialog/SignUp/SignUp.css';
+
+.container {
+  text-align: center;
+  padding: 0 1%;
+  font-size: 16px;
+}
+
+.container h1 {
+  font-size: 1.5em;
+  white-space: pre-wrap;
+  font-weight: 600;
+  color: var(--black);
+  text-transform: unset;
+}
+
+.container h2 {
+  font-size: 1.4em;
+  white-space: pre-wrap;
+  color: var(--light-black);
+  margin-bottom: 3%;
+}
+
+.formContainer {
+  width: 40%;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    font-size: 13px;
+  }
+}

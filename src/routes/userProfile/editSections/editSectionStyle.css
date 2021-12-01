@@ -1,0 +1,108 @@
+/**
+ * Huedeck
+ */
+
+@import '../../../components/variables.css';
+
+.container {
+  min-height: 200px;
+  font-size: 1.4rem;
+}
+
+.editBox {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 0;
+}
+
+.editBox > strong {
+  display: block;
+  font-weight: 500;
+  color: var(--light-black);
+  width: 25%;
+  text-align: right;
+}
+
+.editBox > strong::after {
+  content: ':';
+}
+
+.editBox .inputWrapper {
+  position: relative;
+  text-align: left;
+  width: 70%;
+}
+
+.inputWrapper > .errMsg {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  right: 2%;
+}
+
+/* .updatingUI {
+  opacity: 0.1;
+  pointer-events: none;
+} */
+
+.editAction {
+  text-align: right;
+  margin-top: 2%;
+}
+
+.editAction > button {
+  margin-top: 2%;
+  width: 150px;
+  background: var(--light-blue);
+}
+
+/* Email verify */
+
+.staticText {
+  display: inline-block;
+  align-items: center;
+  color: var(--black);
+}
+
+.emailVerify {
+  color: var(--sky-blue);
+  font-size: 1.3rem;
+}
+
+.emailVerify svg {
+  font-size: 1.6rem;
+  padding: 0 5px;
+}
+
+.emailVerify > button {
+  padding: 0;
+  color: var(--sky-blue);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 1.6rem;
+  }
+
+  .editBox {
+    flex-direction: column;
+  }
+
+  .editBox .inputWrapper {
+    width: 100%;
+  }
+
+  .editBox > strong {
+    width: 100%;
+    text-align: left;
+    padding: 2%;
+  }
+
+  .editAction {
+    text-align: center;
+  }
+}

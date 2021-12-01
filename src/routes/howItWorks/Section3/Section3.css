@@ -1,0 +1,356 @@
+
+@import '../HowItWorks.css';
+
+.section {
+  background: url('https://storage.googleapis.com/huedeck/img/home/s3_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftPart {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  justify-content: flex-start;
+  width: 30%;
+  text-align: center;
+}
+
+.leftPart h2 {
+  margin-top: 0;
+  padding: 3px 8px;
+  background: var(--light-blue);
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.leftPart p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.leftPart .editOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paletteActBtn {
+  composes: button;
+  text-transform: unset;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 60%;
+  font-size: 1.2rem;
+  padding: 0.7rem 0;
+  background-color: transparent;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.paletteActBtnActive,
+.paletteActBtn:hover {
+  border: 2px solid var(--yellow);
+  background-color: var(--yellow);
+  color: #000;
+}
+
+.paletteContent {
+  margin: 5% 0;
+}
+
+.generateBtn {
+  composes: button;
+  margin: 3% 0;
+  width: 200px;
+}
+
+.dropZone {
+  background-image: url('');
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  width: 23rem;
+  height: 23rem;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dropZone > div {
+  background-color: var(--light-blue);
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dropZone > div > svg {
+  color: #fff;
+  font-size: 6rem;
+}
+
+.colorPicker {
+  border: 1px solid lightgray;
+  background: #fff;
+  width: 70%;
+  border-radius: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  padding: 1% 0;
+  margin: 0 auto;
+}
+
+.colorPicker > button {
+  padding: 1.5%;
+  box-sizing: border-box;
+  margin: 1%;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.rightPart {
+  text-align: right;
+  width: 65%;
+}
+
+.rightPart h1 {
+  text-align: right;
+  margin-right: 8%;
+}
+
+.designSample {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.card {
+  width: 30rem;
+  height: 38rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 3%;
+}
+
+.card:first-child {
+  margin: 0;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cardPalette {
+  width: 70%;
+  background: #fff;
+  margin: 5% auto;
+  border-radius: 8px;
+  padding: 3%;
+  -webkit-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cardPalette > .button {
+  width: 80%;
+  font-size: 1.4rem;
+}
+
+.paletteWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4%;
+}
+
+.colorBlock {
+  width: 17%;
+  padding-bottom: 17%;
+  display: inline-block;
+  border-radius: 4px;
+  composes: paletteBoxShadow;
+}
+
+.cardImgContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 60%;
+  box-sizing: border-box;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cardImgContainer .imgWrapper {
+  text-decoration: none;
+  width: 33.3%;
+  height: 50%;
+  overflow: hidden;
+  padding: 2%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.moreBtn {
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  color: var(--light-black);
+  text-transform: capitalize;
+  border: 2px solid var(--light-black);
+  padding: 0.5rem 1rem;
+  margin-right: 2%;
+}
+
+.resetBtn {
+  color: #fff;
+  font-size: 1.3rem;
+  display: block;
+  margin: 0 auto;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section {
+    background-position: left bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .leftPart,
+  .rightPart {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .rightPart h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .rightPart h1 > br {
+    display: none;
+  }
+
+  .designSample {
+    justify-content: space-evenly;
+  }
+
+  .leftPart .editOption {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .paletteActBtn {
+    width: 42%;
+  }
+
+  .colorPicker {
+    width: 70%;
+    flex-wrap: nowrap;
+    overflow: auto;
+    justify-content: flex-start;
+  }
+
+  .colorPicker > button {
+    padding: 3%;
+  }
+
+  .moreBtn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    background-image: url('https://storage.googleapis.com/huedeck/img/home/m/s3_bg.jpg');
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .colorPicker {
+    width: 96%;
+  }
+
+  .colorPicker > button {
+    padding: 1.3%;
+  }
+
+  .designSample {
+    justify-content: flex-start;
+    overflow: auto;
+  }
+
+  .card {
+    width: 24rem;
+    margin-right: 3%;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .cardImgContainer {
+    height: 18rem;
+  }
+
+  .dropZone {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .resetBtn {
+    display: none;
+  }
+}

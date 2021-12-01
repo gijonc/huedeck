@@ -1,0 +1,122 @@
+/**
+ * Huedeck, Inc
+ */
+
+@import '../../../../components/variables.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 14px 36px 2px !important;
+  font-size: 16px;
+}
+
+.container h3 {
+  font-size: 18px;
+  color: lightgray;
+  margin: 10px 6px;
+  font-weight: 500;
+}
+
+input[type='checkbox']:focus {
+  outline: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.checkboxContent {
+  font-size: 15px;
+  width: 100%;
+  min-height: 250px;
+  max-height: 55vh;
+  overflow-y: auto;
+}
+
+.checkboxContent > div {
+  margin-right: 20px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.checkboxContent label {
+  text-transform: capitalize;
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.checkboxContent label:hover {
+  color: grey;
+}
+
+.checkboxContent label > input {
+  width: 20px;
+  height: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.checkboxContent label.highlight {
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--light-blue);
+}
+
+.textContent {
+  min-height: 50px;
+}
+
+.textContent > span {
+  padding: 0 5px;
+}
+
+.textContent .inputBox {
+  -webkit-appearance: none;
+  width: 100px;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* appply and reset button */
+
+.filterAction {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.filterAction > button {
+  padding: 5px 8px;
+  color: grey;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+
+.filterAction .applyBtn {
+  color: var(--sky-blue);
+}
+
+.filterAction p {
+  color: var(--red);
+  font-size: 14px;
+}
+
+/* for mobile devices */
+@media screen and (max-width: 480px) {
+  .checkboxContent > div {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

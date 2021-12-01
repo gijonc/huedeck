@@ -1,0 +1,6 @@
+{
+	"name": "VariantItem",
+	"version": "0.0.0",
+	"private": true,
+	"main": "./VariantItem.js"
+}

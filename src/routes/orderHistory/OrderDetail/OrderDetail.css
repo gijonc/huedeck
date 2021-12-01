@@ -1,0 +1,79 @@
+/**
+ * Huedeck, Inc.
+ */
+
+@import '../OrderHistory.css';
+
+.container {
+  box-sizing: border-box;
+  padding: 3%;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  margin: 1% 0;
+  color: var(--light-black);
+}
+
+.orderSummary {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: var(--black);
+  padding: 3% 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--light-blue);
+}
+
+.orderSummary:last-child {
+  border: none;
+}
+
+.orderSummary > div {
+  width: 45%;
+}
+
+.orderSummary p {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.orderSummary span {
+  padding: 3px 0;
+  font-size: 1.3rem;
+  display: block;
+  line-height: 1.3;
+}
+
+.priceSummary {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    box-sizing: border-box;
+    padding: 10% 3%;
+  }
+
+  .orderSummary {
+    flex-direction: column;
+    border: none;
+    padding: 0;
+  }
+
+  .orderSummary > div {
+    width: 100%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid var(--light-blue);
+  }
+
+  .orderSummary p {
+    font-size: 1.6rem;
+  }
+
+  .orderSummary span {
+    font-size: 1.5rem;
+  }
+}

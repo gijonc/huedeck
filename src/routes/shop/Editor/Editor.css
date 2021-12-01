@@ -1,0 +1,259 @@
+/**
+ *	Huedeck, Inc
+ */
+
+@import '../../../components/variables.css';
+
+.container {
+  padding: 15px;
+  min-height: 400px;
+  width: 550px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.container > h2 {
+  font-family: var(--font-family-heavy);
+  color: var(--black);
+  margin: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* editOption buttons */
+.editorBtnGroup {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--light-blue);
+}
+
+.editOptionBtn {
+  width: 30%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-transform: capitalize;
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+.editOptionBtn i {
+  margin-right: 5px;
+}
+
+.editing {
+  background-color: var(--yellow);
+}
+
+/* Palette */
+.editedPaletteWrapper {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.editedPaletteWrapper > div {
+  width: 20%;
+  padding: 5% 0;
+  display: inline-flex;
+}
+
+/* content */
+.contentWrapper {
+  text-align: center;
+}
+
+.contentWrapper > p {
+  color: var(--light-black);
+  font-style: italic;
+}
+
+/* random */
+.colorsContainer {
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.selectBlock {
+  width: 12%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+}
+
+.selectBlock > div {
+  text-transform: capitalize;
+  padding-top: 5px;
+}
+
+.colorBtn {
+  width: 80%;
+  padding-bottom: 80%;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 5px;
+  composes: paletteBoxShadow;
+}
+
+.colorBtn svg {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 4rem;
+}
+
+.matchBtn {
+  width: 130px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 20px 0;
+  background-color: var(--yellow);
+}
+
+/* customize */
+.customizeColorWrapper {
+  display: inline-block;
+  color: lightgrey;
+  position: relative;
+}
+
+.customizeColorBlock {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  font-size: 30px;
+  margin: 0 8px;
+}
+
+.customizeColorBlock i {
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+.activeColorBlock {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+.customizeCtrlBtn {
+  position: absolute;
+  z-index: var(--over-top);
+  right: 2px;
+  top: -5px;
+  border: 2px solid #dd1818;
+  color: #dd1818;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.colorPickerContainer {
+  width: 80%;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: var(--background-color);
+}
+
+/* upload photo */
+.dropZone {
+  background-image: url('');
+  background-position: center;
+  background-size: cover;
+  margin: 10px auto;
+  width: 280px;
+  height: 280px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px dashed lightgrey;
+}
+
+.dropZone > svg {
+  color: lightgrey;
+  font-size: 5em;
+}
+
+.imgCtrlBtnGroup {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.imgCtrlBtnGroup > button {
+  margin-left: 5px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  color: grey;
+  height: 38px;
+  width: 38px;
+}
+
+/* dialog actions */
+.dialogActions {
+  padding: 20px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.dialogActions > button {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.dialogActions > button > svg {
+  margin-right: 5px;
+}
+
+.actionButton {
+  color: var(--green);
+  composes: button;
+  width: auto;
+  background: #fff;
+  border: 1px solid var(--green);
+  padding: 3px 5px;
+  font-size: 14px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: auto;
+    padding: 20px 15px;
+  }
+
+  .selectBlock {
+    width: 25%;
+    font-size: 11px;
+  }
+
+  .editOptionBtn {
+    width: 40%;
+  }
+
+  .dropZone {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .hideOnMobile {
+    display: none;
+    pointer-events: none;
+  }
+}

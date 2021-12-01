@@ -1,0 +1,145 @@
+/**
+ *	Huedeck, Inc
+ */
+@import '../../components/variables.css';
+
+.root {
+  padding: var(--padding-height) var(--header-padding);
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--max-content-width-xl);
+}
+
+.subHeader {
+  width: 100%;
+}
+
+.startWord {
+  color: var(--black);
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--background-color);
+}
+
+.startWord h1 {
+  font-size: 2em;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
+.startWord p {
+  font-size: 1.1em;
+  color: var(--light-black);
+}
+
+.startWord p a {
+  font-size: 1.3em;
+  display: inline-block;
+  vertical-align: bottom;
+  border-radius: 50%;
+  margin-left: 7px;
+  color: var(--sky-blue);
+}
+
+.controlBar {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1% 0;
+}
+
+.ctrlBtn {
+  composes: button;
+  border: 1px solid var(--black);
+  color: var(--light-black);
+  width: auto;
+  padding: 10px;
+  font-size: 1.3rem;
+  margin-left: 1%;
+  background-color: #fff;
+}
+
+.disabledCtrlBtn {
+  pointer-events: none;
+  color: lightgrey;
+  border-color: lightgrey;
+}
+
+.ctrlBtn i {
+  font-size: 1.5rem;
+  margin-right: 2px;
+}
+
+.redoIcon {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.pickColorBtn {
+  background: #000;
+  color: #fff;
+}
+
+/* ----------------- Color Palette & Picker ----------------- */
+.paletteContainer > div {
+  width: 20%;
+  display: inline-block;
+}
+
+.color {
+  width: 95%;
+  padding-bottom: 42%;
+  border-radius: 6px;
+  composes: paletteBoxShadow;
+  margin: 0 auto;
+}
+
+.fixedPalette {
+  z-index: var(--over-top);
+  position: fixed;
+  width: calc(100% - 2 * var(--header-padding));
+  top: 0;
+  composes: paletteBoxShadow;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+}
+
+.fixedPalette > div {
+  padding: 1.8% 0;
+  width: 20%;
+  display: inline-flex;
+}
+
+@media screen and (max-width: 960px) {
+  .fixedPalette {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    padding: var(--padding-height) 0;
+  }
+
+  .fixedPalette > div {
+    padding: 6% 0;
+  }
+
+  .color {
+    padding-bottom: 60%;
+    border-radius: 3px;
+  }
+
+  .controlBar {
+    justify-content: flex-start;
+    padding: 2% 0;
+  }
+}
